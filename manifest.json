@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+  
+    "name": "jet 一个快速搜索 git 库文件的工具",
+    "description": "A chrome extension to search github file.",
+    "version": "1.0",
+  
+    "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html",
+      "default_title": "jet 一个快速搜索 git 库文件的工具"
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "permissions": [
+      "activeTab",
+      "contextMenus",
+      "storage"
+    ]
+  }
