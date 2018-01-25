@@ -10,6 +10,13 @@
       "default_popup": "popup.html",
       "default_title": "jet 一个快速搜索 git 库文件的工具"
     },
+    "content_scripts": [
+      {
+        "matches": ["*://*.github.com/*"],
+        "css": ["searchBar.css"],
+        "js": ["jquery-3.3.1.min.js", "searchBar.js"]
+      }
+    ],
     "background": {
         "scripts": [
             "background.js"

@@ -1,0 +1,57 @@
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.search-bar {
+    display: none;
+    background: #00212b;
+    box-shadow: 0 5px 10px black, -2px 0 3px black;
+    position: fixed;
+    top: 30px;
+    width: 600px;
+    left: 25%;
+    max-height: 400px;
+    overflow: auto;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.search-bar.show {
+    display: block;
+}
+
+.keyword-container {
+    margin: 6px;
+    font-size: 13px;
+}
+
+.keyword-input {
+    outline: none;
+    height: 25px;
+    width: 100%;
+    border: 1px solid #197777;
+    background: #003847;
+    padding-left: 6px;
+    color: #93a1a1;
+}
+
+.file-list {
+    font-size: 10px;
+    color: #8e989b;
+}
+
+.file-list li {
+    height: 22px;
+    padding: 0 15px;
+}
+
+.file-list li span {
+    font-size: 13px;
+    color: #c6c7c8;
+}
+
+.file-list li.active {
+    background: #005a6f;
+}
